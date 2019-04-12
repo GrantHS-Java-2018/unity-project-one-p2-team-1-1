@@ -7,7 +7,6 @@ public class Dice : MonoBehaviour {
     private SpriteRenderer rend;
     private int whosTurn = 1;
     private bool coroutineAllowed = true;
-    
 
 	// Use this for initialization
 	private void Start () {
@@ -22,44 +21,17 @@ public class Dice : MonoBehaviour {
             StartCoroutine("RollTheDice");
     }
 
-   
-
     private IEnumerator RollTheDice()
     {
         coroutineAllowed = false;
         int randomDiceSide = 0;
-        int randomDiceSide2 = 0;
-        int amoutOfDoubles = 0;
         for (int i = 0; i <= 20; i++)
         {
             randomDiceSide = Random.Range(0, 6);
-            randomDiceSide2 = Random.Range(0, 6);
-            rend.sprite = diceSides[randomDiceSide];
             rend.sprite = diceSides[randomDiceSide];
             yield return new WaitForSeconds(0.05f);
         }
 
-        if (randomDiceSide == randomDiceSide2)
-        {
-            randomDiceSide = Random.Range(0, 6);
-            randomDiceSide2 = Random.Range(0, 6);
-            rend.sprite = diceSides[randomDiceSide];
-            rend.sprite = diceSides[randomDiceSide];
-            yield return new WaitForSeconds(0.05f);
-            amoutOfDoubles++;
-        }
-
-        if (randomDiceSide != randomDiceSide2)
-        {
-            amoutOfDoubles = 0;
-        }
-        
-         if (amoutOfDoubles == 3)
-                {
-                    //go to jail waypoint
-                }
-        
-        
         GameControl.diceSideThrown = randomDiceSide + 1;
         if (whosTurn == 1)
         {
