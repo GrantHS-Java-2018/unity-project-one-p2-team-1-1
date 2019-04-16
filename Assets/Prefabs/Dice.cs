@@ -1,46 +1,40 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Dice : MonoBehaviour {
+public class Dice : MonoBehavior
+{
+    [SerializeField] private Sprite[] dieFace;
 
-    private Sprite[] diceSides;
-    private SpriteRenderer rend;
-    private int whosTurn = 1;
-    private bool coroutineAllowed = true;
+    public int value;
+    public GameObject player1;
+    
+    //start is called before the first frame update
 
-	// Use this for initialization
-	private void Start () {
-        rend = GetComponent<SpriteRenderer>();
-        diceSides = Resources.LoadAll<Sprite>("DiceSides/");
-        rend.sprite = diceSides[5];
-	}
-
-    private void OnMouseDown()
+    void Awake()
     {
-        if (!GameControl.gameOver && coroutineAllowed)
-            StartCoroutine("RollTheDice");
+        
     }
 
-    private IEnumerator RollTheDice()
+    void Start()
     {
-        coroutineAllowed = false;
-        int randomDiceSide = 0;
-        for (int i = 0; i <= 20; i++)
-        {
-            randomDiceSide = Random.Range(0, 6);
-            rend.sprite = diceSides[randomDiceSide];
-            yield return new WaitForSeconds(0.05f);
-        }
-
-        GameControl.diceSideThrown = randomDiceSide + 1;
-        if (whosTurn == 1)
-        {
-            GameControl.MovePlayer(1);
-        } else if (whosTurn == -1)
-        {
-            GameControl.MovePlayer(2);
-        }
-        whosTurn *= -1;
-        coroutineAllowed = true;
+        //if (rollButtonPress == true)
+        //{
+            //StartCoroutine(roll());
+        //}
+        
     }
+
+    public IEnumerator Roll()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            int num = Random.Range(0, 6) + 1;
+            GetComponent<SpriteRenderer>().sprite = dieFace[num - 1];
+            value = num;
+            yield return new WaitForSecounds(15f);
+        }
+        //StartCoutine(Player1.GetComponent<Player>().followWaypoints());
+        player1.GetComponent<player>().followWaypoints();
+    }
+    
 }
