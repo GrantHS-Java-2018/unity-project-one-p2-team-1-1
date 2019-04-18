@@ -33,7 +33,7 @@ namespace Prefabs
             return cards.size();
         }
         
-        public boolean empty() {
+        public bool empty() {
             return cards.size() == 0;
         }
         
