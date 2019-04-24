@@ -25,8 +25,7 @@ public class Dice : MonoBehaviour
             value = num;
             yield return new WaitForSeconds(15f);
         }
-        //StartCoutine(Player1.GetComponent<Player>().followWaypoints());
-        player1.GetComponent<Player>().followWaypoints();
+       
     }
     
 }
