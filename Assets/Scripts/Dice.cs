@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Dice : MonoBehaviour
+public class Dicee : MonoBehaviour
 {
     [SerializeField] private Sprite[] dieFace;
 
