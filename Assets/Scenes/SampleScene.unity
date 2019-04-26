@@ -393,13 +393,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316763331}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 5.49, y: -0.5, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &346888231
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,13 +602,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428986344}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 5.5, y: 1.49, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &434930825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1053,7 @@ GameObject:
   - component: {fileID: 808088015}
   - component: {fileID: 808088014}
   m_Layer: 5
-  m_Name: Button
+  m_Name: DiceRollButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1076,7 +1076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -395.67, y: -177.61}
+  m_AnchoredPosition: {x: -395.7, y: -148.07}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808088014
