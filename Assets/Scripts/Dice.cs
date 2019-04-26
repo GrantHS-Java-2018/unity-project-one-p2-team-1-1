@@ -23,7 +23,7 @@ public class Dice : MonoBehaviour
         //}
         
     }
-
+/*
     public IEnumerator Roll()
     {
         for (int i = 0; i < 20; i++)
@@ -31,10 +31,11 @@ public class Dice : MonoBehaviour
             int num = Random.Range(0, 6) + 1;
             GetComponent<SpriteRenderer>().sprite = dieFace[num - 1];
             value = num;
-            yield return new WaitForSecounds(15f);
+            //yield return new WaitForSecounds(15f);
         }
         //StartCoutine(Player1.GetComponent<Player>().followWaypoints());
-        player1.GetComponent<player>().followWaypoints();
+        player1.GetComponent<player1>().followWaypoints();
     }
+    */
     
 }
