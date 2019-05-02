@@ -23,7 +23,7 @@ public class GameControl : MonoBehaviour {
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
 
-        player1.GetComponent<FollowThePath>().moveAllowed = false;
+       player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
 
         whoWinsTextShadow.gameObject.SetActive(false);
