@@ -3,21 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Property : MonoBehaviour
+public abstract class Property: GameTile
 {
-    // Start is called before the first frame update
+    
+    public int tileMortgage;
+    public int tileUnmortgage;
+    public int tilePrice;
+    public GameObject owner; 
+    public int tileRent => CaluclateRent();
+
+    protected abstract int CaluclateRent();
 
 
-    public String name; 
-    public int mortgageValue;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

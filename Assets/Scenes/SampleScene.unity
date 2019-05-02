@@ -232,11 +232,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 12841602}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Vine Street
+  tileMortgage: 100
+  tileUnmortgage: 0
+  tilePrice: 200
+  owner: {fileID: 0}
 --- !u!212 &12841605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -326,11 +329,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 30383455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Regent Street
+  tileMortgage: 150
+  tileUnmortgage: 0
+  tilePrice: 300
+  owner: {fileID: 0}
 --- !u!212 &30383458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -420,11 +426,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 127260678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Fleet Street
+  tileMortgage: 110
+  tileUnmortgage: 0
+  tilePrice: 220
+  owner: {fileID: 0}
 --- !u!212 &127260681
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -937,7 +946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488072114}
   m_Layer: 0
-  m_Name: Properties
+  m_Name: Streets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,11 +1171,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 557392409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Pentonville Road
+  tileMortgage: 60
+  tileUnmortgage: 0
+  tilePrice: 120
+  owner: {fileID: 0}
 --- !u!212 &557392412
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1376,11 +1388,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 719198075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Park Place
-  mortgageValue: 0
+  tileName: White Chapel Road
+  tileMortgage: 30
+  tileUnmortgage: 0
+  tilePrice: 60
+  owner: {fileID: 0}
 --- !u!212 &719198078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1470,11 +1485,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 738602616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: The Angel Islington
+  tileMortgage: 50
+  tileUnmortgage: 0
+  tilePrice: 100
+  owner: {fileID: 0}
 --- !u!212 &738602619
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1821,11 +1839,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 837854257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Northumberland Avneue
+  tileMortgage: 80
+  tileUnmortgage: 0
+  tilePrice: 160
+  owner: {fileID: 0}
 --- !u!212 &837854260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2079,11 +2100,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 922310408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Whitehall
+  tileMortgage: 70
+  tileUnmortgage: 0
+  tilePrice: 140
+  owner: {fileID: 0}
 --- !u!212 &922310411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2203,11 +2227,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 985715746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Euston Road
+  tileMortgage: 50
+  tileUnmortgage: 0
+  tilePrice: 100
+  owner: {fileID: 0}
 --- !u!212 &985715749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2297,11 +2324,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045957241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Coventry Street
+  tileMortgage: 130
+  tileUnmortgage: 0
+  tilePrice: 260
+  owner: {fileID: 0}
 --- !u!212 &1045957244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2598,11 +2628,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1152381239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Bond Street
+  tileMortgage: 160
+  tileUnmortgage: 0
+  tilePrice: 320
+  owner: {fileID: 0}
 --- !u!212 &1152381242
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2758,11 +2791,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1222772694}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Mayfair
+  tileMortgage: 200
+  tileUnmortgage: 0
+  tilePrice: 400
+  owner: {fileID: 0}
 --- !u!212 &1222772697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2923,11 +2959,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1260199661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Parklane
+  tileMortgage: 175
+  tileUnmortgage: 0
+  tilePrice: 350
+  owner: {fileID: 0}
 --- !u!212 &1260199664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3017,11 +3056,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1277333985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: OldKentRoad
-  mortgageValue: 30
+  tileName: Old Kent Road
+  tileMortgage: 30
+  tileUnmortgage: 0
+  tilePrice: 60
+  owner: {fileID: 0}
 --- !u!212 &1277333988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3220,11 +3262,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292668938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Marlborough Street
+  tileMortgage: 90
+  tileUnmortgage: 0
+  tilePrice: 180
+  owner: {fileID: 0}
 --- !u!212 &1292668941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3374,11 +3419,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425823868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Bow Street
+  tileMortgage: 90
+  tileUnmortgage: 0
+  tilePrice: 180
+  owner: {fileID: 0}
 --- !u!212 &1425823871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3468,11 +3516,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450340560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Trafalgar Square
+  tileMortgage: 120
+  tileUnmortgage: 0
+  tilePrice: 240
+  owner: {fileID: 0}
 --- !u!212 &1450340563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3622,11 +3673,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1473601159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Strand
+  tileMortgage: 110
+  tileUnmortgage: 0
+  tilePrice: 220
+  owner: {fileID: 0}
 --- !u!212 &1473601162
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3746,11 +3800,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1542771418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Pall Mall
+  tileMortgage: 70
+  tileUnmortgage: 0
+  tilePrice: 140
+  owner: {fileID: 0}
 --- !u!212 &1542771421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4332,11 +4389,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1767340712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Leicester Square
+  tileMortgage: 130
+  tileUnmortgage: 0
+  tilePrice: 260
+  owner: {fileID: 0}
 --- !u!212 &1767340715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4560,11 +4620,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1851034559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Piccadilly
+  tileMortgage: 140
+  tileUnmortgage: 0
+  tilePrice: 280
+  owner: {fileID: 0}
 --- !u!212 &1851034562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4803,7 +4866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2032559891}
   m_Layer: 0
-  m_Name: Cards
+  m_Name: GameTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4925,11 +4988,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2054627047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b93cad8bf069f647af52bf43a9d0c97, type: 3}
+  m_Script: {fileID: 11500000, guid: bfa32427b3e37cc43b509a7e71da1ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Boardwalk
-  mortgageValue: 0
+  tileName: Oxford Street
+  tileMortgage: 150
+  tileUnmortgage: 0
+  tilePrice: 300
+  owner: {fileID: 0}
 --- !u!212 &2054627050
 SpriteRenderer:
   m_ObjectHideFlags: 0
