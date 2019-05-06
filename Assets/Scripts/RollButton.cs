@@ -16,19 +16,19 @@ public class RollButton : MonoBehaviour
 
     public int totalDice;
 
-    void Start()
+    public void Start()
     {
-        m_YourFirstButton.onClick.AddListener(TaskOnClick);
-        
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            totalDice = 0;
+            rollButtonPress = true;
+            StartCoroutine(dice1.GetComponent<Dice>().Roll());
+            StartCoroutine(dice2.GetComponent<Dice>().Roll());
+            totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
+                
+        }
     }
 
-    void TaskOnClick()
-    {
-        totalDice = 0;
-        rollButtonPress = true;
-        StartCoroutine(dice1.GetComponent<Dice>().Roll());
-        StartCoroutine(dice2.GetComponent<Dice>().Roll());
-        totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
-    }
-
+  
 }
