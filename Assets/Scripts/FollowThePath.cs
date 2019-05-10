@@ -27,7 +27,11 @@ public class FollowThePath : MonoBehaviour
 
     private void Move()
     {
-        if (waypointIndex <= waypoints.Length - 1)
+
+        int total = GetComponent<RollButton>().totalDice;
+        
+        if (waypointIndex <= waypoints.Length - 1 && total >= 0)
+       
         {
             transform.position = Vector2.MoveTowards(transform.position,
                 waypoints[waypointIndex].transform.position,
@@ -36,6 +40,7 @@ public class FollowThePath : MonoBehaviour
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 waypointIndex += 1;
+                total--;
             }
         }
     }
