@@ -6,5 +6,5 @@ using UnityEngine;
 
 public abstract class PayCards : DrawingCards
 {
-    
+    public String description;
 }

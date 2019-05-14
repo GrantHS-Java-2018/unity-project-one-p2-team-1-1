@@ -6,5 +6,5 @@ using UnityEngine;
 
 public abstract class MovementCards : DrawingCards
 {
-    public int desciption;
+    public String description;
 }
