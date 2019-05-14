@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public abstract class MovementCards : DrawingCards
+public class MovementCards : DrawingCards
 {
     public String description;
 }

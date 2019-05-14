@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class GetPaidCards
+public class GetPaidCards : DrawingCards
 {
     public String description;
 }
