@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Street : Property
 {
-    protected override int CaluclateRent()
+    protected override int CalculateRent()
     {
         return 0;
         //return rentValues[(monopoly ? 1 : 0) + houseCount + (hasHotel ? 1 : 0)];

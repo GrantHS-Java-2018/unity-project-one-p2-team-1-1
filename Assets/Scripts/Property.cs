@@ -10,9 +10,9 @@ public abstract class Property: GameTile
     public int tileUnmortgage;
     public int tilePrice;
     public GameObject owner; 
-    public int tileRent => CaluclateRent();
+    public int tileRent => CalculateRent();
 
-    protected abstract int CaluclateRent();
+    protected abstract int CalculateRent();
 
 
 }
