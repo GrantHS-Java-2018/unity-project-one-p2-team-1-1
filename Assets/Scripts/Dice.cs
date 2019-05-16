@@ -7,7 +7,8 @@ public class Dice : MonoBehaviour
 
     public int value;
     public GameObject player1;
-    
+    public GameObject player2;
+    public int total;
     //start is called before the first frame update
 
     void Awake()
@@ -15,12 +16,13 @@ public class Dice : MonoBehaviour
         
     }
 
-    void Start()
+
+    public int Roll()
     {
-        //if (rollButtonPress == true)
-        //{
-            //StartCoroutine(roll());
-        //}
+        int num = Random.Range(0, 6) + 1;
+        GetComponent<SpriteRenderer>().sprite = dieFace[num - 1];
+        value = num;
+        return value;
         
     }
 /*
