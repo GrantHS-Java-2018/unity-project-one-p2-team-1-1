@@ -28,5 +28,6 @@ public class Dice : MonoBehaviour
         }
         
     }
+    */
     
 }
