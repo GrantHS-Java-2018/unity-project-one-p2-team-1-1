@@ -43,6 +43,7 @@ public class RollButton : MonoBehaviour
             yield return new WaitForSeconds(.10f);
         }
         totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
-        //Moveplayer(totalDice)
+        //move;
+
     }
 }

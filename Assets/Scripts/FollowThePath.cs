@@ -25,7 +25,7 @@ public class FollowThePath : MonoBehaviour
     }
 
 
-    private void Move()
+    public void Move()
     {
 
         int total = GetComponent<RollButton>().totalDice;
