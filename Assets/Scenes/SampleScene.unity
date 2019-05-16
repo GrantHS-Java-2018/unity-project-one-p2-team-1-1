@@ -315,6 +315,8 @@ MonoBehaviour:
   dieFace: []
   value: 0
   player1: {fileID: 0}
+  player2: {fileID: 0}
+  total: 0
 --- !u!61 &316763333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -527,6 +529,8 @@ MonoBehaviour:
   dieFace: []
   value: 0
   player1: {fileID: 0}
+  player2: {fileID: 0}
+  total: 0
 --- !u!61 &428986346
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1408,6 +1412,52 @@ Transform:
   m_Father: {fileID: 1242489160}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &885167756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885167758}
+  - component: {fileID: 885167757}
+  m_Layer: 0
+  m_Name: CurrencyHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &885167757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885167756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86beca7548dfdde41978cdd6e78d2386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WhoWinsText: {fileID: 5138206}
+  player1: {fileID: 1670639234}
+  player2: {fileID: 1746942843}
+--- !u!4 &885167758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885167756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 199.38425, y: 140.11317, z: -5.041882}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &898506031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,6 +2325,7 @@ GameObject:
   - component: {fileID: 1670639236}
   - component: {fileID: 1670639235}
   - component: {fileID: 1670639237}
+  - component: {fileID: 1670639238}
   m_Layer: 0
   m_Name: player1
   m_TagString: Untagged
@@ -2401,6 +2452,19 @@ MonoBehaviour:
   moveSpeed: 5
   waypointIndex: 0
   moveAllowed: 1
+--- !u!114 &1670639238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670639234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a766d9fed9dac44d8b122c3c8139a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 1500
 --- !u!1 &1732509508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,6 +2555,7 @@ GameObject:
   - component: {fileID: 1746942845}
   - component: {fileID: 1746942844}
   - component: {fileID: 1746942846}
+  - component: {fileID: 1746942847}
   m_Layer: 0
   m_Name: player2
   m_TagString: Untagged
@@ -2617,6 +2682,19 @@ MonoBehaviour:
   moveSpeed: 5
   waypointIndex: 0
   moveAllowed: 1
+--- !u!114 &1746942847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746942843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a766d9fed9dac44d8b122c3c8139a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 1500
 --- !u!1 &1775618031
 GameObject:
   m_ObjectHideFlags: 0
