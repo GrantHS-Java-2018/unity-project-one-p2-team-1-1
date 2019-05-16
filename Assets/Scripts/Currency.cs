@@ -28,28 +28,28 @@ public class Currency : MonoBehaviour
 
     }
 
-    public void AddMoneyToP1()
+    public void AddMoneyToP1(int value)
     {
-        player1.GetComponent<Wallet>().money += 0; //card value
+        player1.GetComponent<Wallet>().money += value; //card value
         
     }
-    public void AddMoneyToP2()
+    public void AddMoneyToP2(int value)
     {
-        player2.GetComponent<Wallet>().money  += 0; //card value
+        player2.GetComponent<Wallet>().money  += value; //card value
        
     }
-    public void RemoveMoneyToP1()
+    public void RemoveMoneyToP1(int value)
     {
-        player1.GetComponent<Wallet>().money -= 0; //card value
-        if (player1.GetComponent<Wallet>().money <= 0) ;
+        player1.GetComponent<Wallet>().money -= value; //card value
+        if (player1.GetComponent<Wallet>().money <= value) ;
         {
             WhoWinsText.GetComponent<Text>().enabled = true;
         }
     }
-    public void RemoveMoneyToP2()
+    public void RemoveMoneyToP2(int value)
     {
-        player2.GetComponent<Wallet>().money -= 0; //card value
-        if (player2.GetComponent<Wallet>().money <= 0) ;
+        player2.GetComponent<Wallet>().money -= value; //card value
+        if (player2.GetComponent<Wallet>().money <= value) ;
         {
             WhoWinsText.GetComponent<Text>().enabled = true;
         }
@@ -57,8 +57,8 @@ public class Currency : MonoBehaviour
 
     public void PayToPlayer1(int value)
          {
-             player1.GetComponent<Wallet>().money += value; //card value
-             player2.GetComponent<Wallet>().money -=  100; //card value
+             player1.GetComponent<Wallet>().money += value; 
+             player2.GetComponent<Wallet>().money -=  value; 
              if (player2.GetComponent<Wallet>().money <= 0) ;
              {
                  WhoWinsText.GetComponent<Text>().enabled = true;
@@ -66,10 +66,10 @@ public class Currency : MonoBehaviour
      
          }
     
-    public void PayToPlayer2()
+    public void PayToPlayer2(int value)
     {
-        player2.GetComponent<Wallet>().money += 100; //card value
-        player1.GetComponent<Wallet>().money -=  100; //card value
+        player2.GetComponent<Wallet>().money += value; //card value
+        player1.GetComponent<Wallet>().money -=  value; //card value
         if (player1.GetComponent<Wallet>().money <= 0) ;
         {
             WhoWinsText.GetComponent<Text>().enabled = true;

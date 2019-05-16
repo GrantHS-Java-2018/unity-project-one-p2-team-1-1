@@ -38,6 +38,6 @@ public class Dice : MonoBehaviour
         //StartCoutine(Player1.GetComponent<Player>().followWaypoints());
         player1.GetComponent<player1>().followWaypoints();
     }
-    */
+   
     
 }
