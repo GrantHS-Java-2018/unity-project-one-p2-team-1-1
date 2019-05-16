@@ -22,18 +22,27 @@ public class RollButton : MonoBehaviour
 
     }
 
-     void TaskOnClick()
+    public void TaskOnClick()
+    {
+       
+       //Output this to console when Button1 or Button3 is clicked
+       Debug.Log("You have clicked the button!");
+        
+       //totalDice = 0;
+
+       StartCoroutine(RollDice());
+
+    }
+
+    private IEnumerator RollDice()
+    {
+        for (int i = 0; i < 10; i++)
         {
-           
-           //Output this to console when Button1 or Button3 is clicked
-           Debug.Log("You have clicked the button!");
-            
-           //totalDice = 0;
-
-
-           StartCoroutine(dice1.GetComponent<Dice>().Roll());
-           StartCoroutine(dice2.GetComponent<Dice>().Roll());
-           totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
-
+            dice1.GetComponent<Dice>().Roll();
+            dice2.GetComponent<Dice>().Roll();
+            yield return new WaitForSeconds(.10f);
         }
+        totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
+        //Moveplayer(totalDice)
+    }
 }

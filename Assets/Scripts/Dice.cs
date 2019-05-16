@@ -17,15 +17,12 @@ public class Dice : MonoBehaviour
     }
 
 
-    public IEnumerator Roll()
+    public int Roll()
     {
-        for (int i = 0; i < 20; i++)
-        {
-            int num = Random.Range(0, 6) + 1;
-            GetComponent<SpriteRenderer>().sprite = dieFace[num - 1];
-            total = num;
-            yield return new WaitForSeconds(15f);
-        }
+        int num = Random.Range(0, 6) + 1;
+        GetComponent<SpriteRenderer>().sprite = dieFace[num - 1];
+        value = num;
+        return value;
         
     }
     

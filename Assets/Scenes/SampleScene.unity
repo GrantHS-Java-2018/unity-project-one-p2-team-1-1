@@ -312,9 +312,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e1c10d704a11a4f8c48b4a8655fdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieFace: []
+  dieFace:
+  - {fileID: 21300000, guid: b3911beb374eae041aa5e5e08caa762c, type: 3}
+  - {fileID: 21300000, guid: a748fcc880b5c744191dab495f6055b3, type: 3}
+  - {fileID: 21300000, guid: 18c388f6ed7f65d42b75936e33245604, type: 3}
+  - {fileID: 21300000, guid: dec089873ecef47418c3ed87dff18056, type: 3}
+  - {fileID: 21300000, guid: c3803b5c960a04a48a06810f0c0c0a6d, type: 3}
+  - {fileID: 21300000, guid: 22b68bc8b39192d40b165a6deb7efa9f, type: 3}
   value: 0
-  player1: {fileID: 0}
+  player1: {fileID: 1670639234}
+  player2: {fileID: 1746942843}
+  total: 0
 --- !u!61 &316763333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -524,9 +532,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e1c10d704a11a4f8c48b4a8655fdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieFace: []
+  dieFace:
+  - {fileID: 21300000, guid: b3911beb374eae041aa5e5e08caa762c, type: 3}
+  - {fileID: 21300000, guid: a748fcc880b5c744191dab495f6055b3, type: 3}
+  - {fileID: 21300000, guid: 18c388f6ed7f65d42b75936e33245604, type: 3}
+  - {fileID: 21300000, guid: dec089873ecef47418c3ed87dff18056, type: 3}
+  - {fileID: 21300000, guid: c3803b5c960a04a48a06810f0c0c0a6d, type: 3}
+  - {fileID: 21300000, guid: 22b68bc8b39192d40b165a6deb7efa9f, type: 3}
   value: 0
-  player1: {fileID: 0}
+  player1: {fileID: 1670639234}
+  player2: {fileID: 1746942843}
+  total: 0
 --- !u!61 &428986346
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1437,11 +1453,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59dfada5a47b1d24fbea301c95afb828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rollButton: {fileID: 0}
+  rollButton: {fileID: 808088014}
   dice1: {fileID: 428986344}
   dice2: {fileID: 316763331}
   player1: {fileID: 1670639234}
-  player2: {fileID: 0}
+  player2: {fileID: 1746942843}
   totalDice: 0
 --- !u!1 &1064096075
 GameObject:
@@ -2258,9 +2274,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670639234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.701, y: -3.567, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7009997, y: -3.5670002, z: 0}
+  m_LocalScale: {x: 0.080000035, y: 0.080000035, z: 0.08}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
