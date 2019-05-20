@@ -6,44 +6,27 @@ using UnityEngine.UI;
 
 public class RollButton : MonoBehaviour
 {
-
-    public Button rollButton;
+    public Boolean rollButteonPress = false;
+    public Boolean pressRoll = false
+    private int button;
+    public Button m_YourFirstButton;
     public GameObject dice1, dice2;
-    public GameObject player1;
-    public GameObject player2;
+    public GameObject Player1;
+
     public int totalDice;
 
-    public void Start()
+    void Start()
     {
-        rollButton.onClick.AddListener(TaskOnClick);
-
-      
-           
-
-    }
-
-    public void TaskOnClick()
-    {
-       
-       //Output this to console when Button1 or Button3 is clicked
-       Debug.Log("You have clicked the button!");
+        m_YourFirstButton.onClick.AddListener(TaskOnClick);
         
-       //totalDice = 0;
-
-       StartCoroutine(RollDice());
-
     }
 
-    private IEnumerator RollDice()
+    void TaskOnClick()
     {
-        for (int i = 0; i < 10; i++)
-        {
-            dice1.GetComponent<Dice>().Roll();
-            dice2.GetComponent<Dice>().Roll();
-            yield return new WaitForSeconds(.10f);
-        }
-        totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
-        //move;
-
+        rollButtonPress = true;
+        StartCoroutine(dice1.GetComponent<Dice>().Roll));
+        StartCoroutine(dice2.GetComponent<Dice>().Roll));
+        totalDice = dice1.Getcomponent<Dice>().value + dice2.getComponent<Dice>().value;
     }
+
 }
