@@ -3,18 +3,19 @@
 public class FollowThePath : MonoBehaviour
 {
 
-    public Transform[] waypoints;
+    public Transform[] waypoints = new Transform[40];
 
     [SerializeField] private float moveSpeed = 1f;
 
-    [HideInInspector] public int waypointIndex = 0;
+    [HideInInspector] public int waypointIndex = 40;
 
     public bool moveAllowed = false;
 
     // Use this for initialization
     private void Start()
     {
-        transform.position = waypoints[waypointIndex].transform.position;
+        
+       // transform.position = waypoints[waypointIndex -1].transform.position;
     }
 
     // Update is called once per frame
