@@ -8,14 +8,14 @@ public class RollButton : MonoBehaviour
 {
 
     public Button rollButton;
-    public GameObject dice1, dice2;
+    public GameObject die1, die2;
     public GameObject player1;
     public GameObject player2;
     public int totalDice;
 
     public void Start()
     {
-        rollButton.onClick.AddListener(TaskOnClick);
+        //GetComponentInParent<Button>().AddListener(TaskOnClick);
 
       
            
@@ -30,7 +30,7 @@ public class RollButton : MonoBehaviour
         
        //totalDice = 0;
 
-       StartCoroutine(RollDice());
+       StartCoroutine(die1.);
 
     }
 
@@ -38,12 +38,13 @@ public class RollButton : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            dice1.GetComponent<Dice>().Roll();
-            dice2.GetComponent<Dice>().Roll();
+            Debug.Log("roll " + i);
+            die1.GetComponent<Dice>().Roll();
+            die2.GetComponent<Dice>().Roll();
             yield return new WaitForSeconds(.10f);
         }
-        totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
-        MovePlayer(totalDice);
+        totalDice = die1.GetComponent<Dice>().value + die2.GetComponent<Dice>().value;
+        //MovePlayer(totalDice);
 
     }
 }
