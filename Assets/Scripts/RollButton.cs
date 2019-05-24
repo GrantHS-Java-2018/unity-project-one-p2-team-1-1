@@ -23,10 +23,15 @@ public class RollButton : MonoBehaviour
 
     void TaskOnClick()
     {
-        rollButtonPress = true;
-        StartCoroutine(dice1.GetComponent<Dice>().Roll));
-        StartCoroutine(dice2.GetComponent<Dice>().Roll));
-        totalDice = dice1.Getcomponent<Dice>().value + dice2.getComponent<Dice>().value;
+        for (int i = 0; i < 10; i++)
+        {
+            dice1.GetComponent<Dice>().Roll();
+            dice2.GetComponent<Dice>().Roll();
+            yield return new WaitForSeconds(.10f);
+        }
+        totalDice = dice1.GetComponent<Dice>().value + dice2.GetComponent<Dice>().value;
+        MovePlayer(totalDice);
+
     }
 
 }

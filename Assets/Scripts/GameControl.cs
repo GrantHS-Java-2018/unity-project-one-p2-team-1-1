@@ -60,7 +60,7 @@ public class GameControl : MonoBehaviour {
             gameOver = true;
         }
 
-        if (player2.GetComponent<FollowThePath>().waypointIndex ==
+        if (player2.GetComponent<FollowThePath>().waypointIndex == 
             player2.GetComponent<FollowThePath>().waypoints.Length)
         {
             whoWinsTextShadow.gameObject.SetActive(true);
