@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 {
     public GameObject dice1, dice2;
 
-    public GameObject Button;
+    public GameObject button;
 
     public GameObject[] waypointArray;
     private Waypoint currentWaypoint;
@@ -17,12 +17,12 @@ public class Player : MonoBehaviour
     private int doublesCounter = 0;
     public GameObject jailWaypoint;
 
-    void Srart()
+    void Start()
     {
         transform.position = new Vector3(waypointArray[waypointIndex].transform.postition.x, waypointArray[waypointIndex].transform.position.y, 0);
     }
 
-    public void followWaypoint()
+    public void FollowWaypoint()
     {
         if (stopRolling == 1)
         {
